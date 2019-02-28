@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Judy's little sampler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Loading...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div class="pullDown">
+    <ion-icon name="bonfire" size="medium"></ion-icon>
+    pull down to refresh
+  </div>
+  <ion-button *ngFor="let p of platforms">{{p.toString()}}</ion-button>
+  <ion-button *ngIf="!loading" (click)="onStartLoading()" [color]="buttonColor" [ngClass]="buttonClass">Load</ion-button>
+
+</ion-content>
