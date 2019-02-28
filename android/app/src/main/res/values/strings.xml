@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionicTest</string>
+    <string name="title_activity_main">ionicTest</string>
+    <string name="package_name">ionic.test.app</string>
+    <string name="fileprovider_authority">ionic.test.app.fileprovider</string>
+    <string name="custom_url_scheme">ionic.test.app</string>
+</resources>
